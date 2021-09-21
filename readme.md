@@ -36,12 +36,27 @@ app.listen(5000)
 
 4. ejs test
 - make file : [views]-index.ejs
+
+index.ejs
+```javascript
+<h1><%=sample %></h1>
+```
+
 server.js
 ```javascript
 // set template engine
 app.set('view engine', 'ejs')
 
-app.get('/',(res,req)=>{
-    req.render('index')
+app.get('/', (req, res)=>{
+    res.render('index', {sample: 'dfdfdf'})
 })
 ```
+
+5. static
+```app.use('/public', express.static('public'))```
+example
+```html
+<img src="/public/images/59987309.jpeg" class="card-img" alt="...">
+```
+
+# post
