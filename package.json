@@ -1,0 +1,27 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeeEugene1/express-blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeeEugene1/express-blog/issues"
+  },
+  "homepage": "https://github.com/LeeEugene1/express-blog#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
