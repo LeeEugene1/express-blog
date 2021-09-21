@@ -1,8 +1,15 @@
 const express = require('express')
 const app = express()
 
+const mongoose = require('mongoose')
+// connect to m
+mongoose.connect('mongodb+srv://admin:1234@cluster0.feldq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
+    
+})
+
 // set template engine
 app.set('view engine', 'ejs')
+app.use(express.urlencoded({extended: false}))
 const blogRouter = require('./routes/blogs')
 
 
