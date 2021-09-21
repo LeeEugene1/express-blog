@@ -1,6 +1,7 @@
 # setting
 
 1. npm package
+
 ```npm init```
 
 2. dependency
@@ -8,9 +9,11 @@
 - express
 - mongoose
 - ejs
+
 ```npm i express mongoose ejs```
 
 3. nodemon test
+
 ```npm i --save-dev nodemon```
 package.json
 ```javascript
