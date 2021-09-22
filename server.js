@@ -9,7 +9,9 @@ mongoose.connect('mongodb+srv://admin:1234@cluster0.feldq.mongodb.net/myFirstDat
 
 // set template engine
 app.set('view engine', 'ejs')
-app.use(express.urlencoded({extended: false}))
+// app.use(express.urlencoded({extended: false}))
+const bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({extended: false}))
 const blogRouter = require('./routes/blogs')
 
 
