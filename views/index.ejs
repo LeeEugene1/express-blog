@@ -28,7 +28,7 @@
         </div>
 
         <div class="row">
-            <% blogs.forEach(blog => { %>
+            <% blogs.forEach(blog3 => { %>
 
                 <div class="col-lg-6 card mt-2 mr-0">
                     <div class="row p-2">
@@ -37,7 +37,7 @@
                         </div>
                         <div class="col-7">
                             <div class="d-flex align-items-start">
-                                <h5 class="w-100"><b> <%= blog.title %> </b></h5>
+                                <h5 class="w-100"><b> <%= blog3.title %> </b></h5>
                                 <div class="more position-relative" style="cursor: pointer;">
                                     <i class="material-icons p-2">more_vert</i>
                                     <div class="d-none options card rounded-pill shadow-sm p-1 position-absolute">
@@ -47,7 +47,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <span class="align-self-stretch "><%= blog.content %>
+                            <span class="align-self-stretch "><%= blog3.description %>
                             </span>
                             <div class="d-flex align-items-end">
                                 <div class="mr-2">
@@ -55,7 +55,7 @@
                                 </div>
                                 <div class=" flex-grow-1">
                                     <h5 class="" style="font-size: 14px; line-height: 0.5rem;">
-                                        <span><b><%= blog.author%></b></span></h5>
+                                        <span><b><%= blog3.author%></b></span></h5>
                                    
                                 </div>
                                 <a href="#" class=" align-self-end">
